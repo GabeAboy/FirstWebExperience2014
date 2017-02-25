@@ -1,0 +1,141 @@
+ <link rel="stylesheet" type="text/css"
+          href="style.css" title = "Default"/>
+    <link rel="alternate stylesheet" type="text/css"
+    href="styletwo.css" title = "Alternative"/>
+    
+        <form action="<?php print $phpSelf; ?>"
+              method="post"
+              id="frmRegister">
+
+            <fieldset class="wrapper">
+               
+                <p>Your input help me improve in providing better web content.</p>
+
+                <fieldset class="wrapperTwo">
+                    <legend>Design Feedback</legend>
+ <fieldset class="radio">
+    <legend>What is your gender?</legend>
+    
+    <label><input type="radio" 
+                  id="radGenderMale" 
+                  name="radGender" 
+                  value="Male"
+                  <?php if ($gender == "Male") print 'checked' ?>
+                  tabindex="330">Male</label>
+    <label><input type="radio" 
+                  id="radGenderFemale" 
+                  name="radGender" 
+                  value="Female"
+                  <?php if ($gender == "Female") print 'checked' ?>
+                  tabindex="340">Female</label>
+</fieldset>
+                    <fieldset class="contact">
+                      
+                        
+                        <legend>Contact Information</legend>
+                        
+                       <label for="txtFirstName" class="required">First Name
+                            <input type="text" id="txtFirstName" name="txtFirstName"
+                                   value="<?php print $firstName; ?>"
+                                   tabindex="100" maxlength="45" placeholder="Enter your first name"
+                                   <?php if ($firstNameERROR) print 'class="mistake"'; ?>
+                                   onfocus="this.select()"
+                                   autofocus>
+                        </label>
+                        
+                        
+                        <label for="txtLastName" class="required">Last Name
+                            <input type="text" id="txtLastName" name="txtLastName"
+                                   value="<?php print $lastName; ?>"
+                                   tabindex="100" maxlength="45" placeholder="Enter your last name"
+                                   <?php if ($lastNameERROR) print 'class="mistake"'; ?>
+                                   onfocus="this.select()"
+                                   autofocus>
+                        </label>
+                        
+                        <label for="txtEmail" class="required">Email
+                            <input type="text" id="txtEmail" name="txtEmail"
+                                   value="<?php print $email; ?>"
+                                   tabindex="120" maxlength="45" placeholder="Enter a valid email address"
+                                   <?php if ($emailERROR) print 'class="mistake"'; ?>
+                                   onfocus="this.select()" 
+                                   >
+                        </label>
+                    </fieldset>
+                    <div class = 'push'> </div><!-- ends contact -->
+                    
+                    
+                    
+                    
+                    <fieldset  class="textarea">
+                  
+    <legend>Whats your favorite coding language?</legend>
+    <label><input type="checkbox" 
+                  id="chkJava" 
+                  name="chkJava" 
+                  value="Java"
+                  <?php if ($java) print " checked "; ?>
+                  tabindex="420"> Java</label>
+
+    <label><input type="checkbox" 
+                  id="chkCss" 
+                  name="chkCss" 
+                  value="CSS"
+                  <?php if ($css)  print " checked "; ?>
+                  tabindex="430"> CSS</label>
+    
+       <label><input type="checkbox" 
+                  id="chkPython" 
+                  name="chkPython" 
+                  value="Python"
+                  <?php if ($python)  print " checked "; ?>
+                  tabindex="430"> Python</label>
+    
+    <h3> Please Leave a comment</h3>
+    <textarea id="txtComments" 
+              name="txtComments" 
+              tabindex="200"
+              onfocus="this.select()" 
+              style="width: 25em; height: 4em;" ><?php print $comments; ?></textarea>
+              <!-- NOTE: no blank spaces inside the text area -->
+              <legend></legend>
+                    
+                    
+                    
+     <fieldset  class="listbox">	
+    <label for="lstChange">What would you change?</label>
+    <select id="lstChange" 
+            name="lstChange" 
+            tabindex="520" >
+        <option <?php if($mountain=="Everything") print " selected "; ?>
+            value="Everything">Everything</option>
+        <option <?php if($mountain=="Nothing") print " selected "; ?>
+            value="Nothing">Nothing</option>
+        <option <?php if($mountain=="Background") print " selected "; ?>
+            value="Background">Background</option>
+        <option <?php if($mountain=="Font") print " selected "; ?>
+            value="Font">Font</option>
+        <option <?php if($mountain=="Design") print " selected "; ?>
+            value="Design">Design</option>
+    </select>
+<fieldset class="buttons">
+                    <legend></legend>
+                    <input type="submit" id="btnSubmit" name="btnSubmit" value="Submit" tabindex="900" class="button">
+</fieldset> <!-- ends buttons -->   
+                    
+               
+                
+       
+    </fieldset> <!-- Ends Wrapper -->
+</form>
+
+    <?php
+    } // end body submit
+    ?>
+
+</article>
+
+<?php include "footer.php"; ?>
+
+</body>
+</html>

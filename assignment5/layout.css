@@ -1,0 +1,67 @@
+#site_center { background:url(images/header_bg.gif) repeat-x center top}
+.main { }
+.min_width {min-width:900px;}
+.menu{min-width:900px;}
+
+/*======= header =======*/
+#header{ height:117px; width:100%; min-width:900px}
+div.col1 img.title{position: absolute;
+			top:20px;
+			left:164px;}
+
+/*======= footer =======*/
+#footer{ height:69px; width:100%; min-width:900px}
+
+.col_1, .col_2, .col_3, .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8 { float:left;}
+
+/*======= index.html =======*/
+#page1 #content .row2 .col1{ width:4%}
+#page1 #content .row2 .col2{ width:40%}
+#page1 #content .row2 .col3{ width:56%}
+
+/*======= index-1.html =======*/
+#page2 #content .row2 .col1{ width:4%}
+#page2 #content .row2 .col2{ width:40%}
+#page2 #content .row2 .col3{ width:56%}
+
+/*======= index-2.html =======*/
+#page3 #content .row2 .col1{ width:4%}
+#page3 #content .row2 .col2{ width:33%}
+#page3 #content .row2 .col3{ width:63%}
+
+/*======= index-3.html =======*/
+#page4 #content .row2 .col1{ width:4%}
+#page4 #content .row2 .col2{ width:40%}
+#page4 #content .row2 .col3{ width:56%}
+
+/*======= index-4.html =======*/
+#page5 #content .row2 .col1{ width:4%}
+#page5 #content .row2 .col2{ width:85%}
+#page5 #content .row2 .col3{ width:11%}
+
+
+/*======= index-5.html =======*/
+#page6 #content .row2 .col1{ width:4%}
+#page6 #content .row2 .col2{ width:85%}
+#page6 #content .row2 .col3{ width:11%}
+
+/*======= index-6.html =======*/
+#page7 #content .row2 .col1{ width:4%}
+#page7 #content .row2 .col2{ width:33%}
+#page7 #content .row2 .col3{ width:61%}
+
+
+/*======= index-7.html =======*/
+#page8 #content .row2 .col1{ width:4%}
+#page8 #content .row2 .col2{ width:33%}
+#page8 #content .row2 .col3{ width:61%}
+
+/*======= x-8.html =======*/
+#page9 #content .row2 .col1{ width:4%}
+#page9 #content .row2 .col2{ width:93%}
+#page9 #content .row2 .col3{ width:3%}
+
+
+
+/*=========================*/
+

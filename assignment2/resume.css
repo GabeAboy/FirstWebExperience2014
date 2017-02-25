@@ -1,0 +1,265 @@
+/************************************************************* 
+This style sheet is used to define the look of your resume.
+
+the first section is for the ID. I used an ID for each main 
+section of the resume. the second section is for the css classes.
+I have listed them alphabetically to make it easier for you to
+find them. This example is pretty plain by the way.
+***************************************************************/
+
+
+/*#resume p#myImage{
+    /*background-image: url("http://www.uvm.edu/~cems/cs/gfx/erickson.jpg");
+    background-image: url("ME.JPG");
+    width: 100px;
+    height: 123px;
+    float: right;
+    margin: 1em;
+}*/
+
+#coName{/* i did not set any style for this*/}
+#education { margin-top: 12pt; }
+#profExperience {margin-top: 12pt;}
+#experience {margin-top: 12pt; clear: both;}
+#hcard-Robert-Erickson { border-bottom: 2px solid black;}
+#interests {margin-top: 12pt;
+            margin-bottom: 4em;}
+#name  { text-align: left;
+         color: #000000;
+         font-family: "sans-serif";
+         font-weight: bold;
+         font-size: 20pt;
+         margin-bottom: 0pt;
+}
+#skills ul {
+    margin-left:5em;
+}
+#skills ul li{
+
+    display: inline;
+    list-style-type: none;
+    padding-right: 1em;
+
+}
+
+#skills ul li:after{
+    content: ", ";
+}
+
+#skills ul li:last-child:after{
+    content: "";
+}
+
+
+#resume { margin-left: 12pt;
+          margin-right: 12pt;
+          margin-top: 12pt;
+          margin-bottom: 12pt;
+          font-family: "Georgia";
+          font-size: 12pt;
+          margin-right: 4em;
+          margin-left: 4em;
+
+
+}
+
+#references { margin-top: 12pt; }
+
+li#workExamples.job{margin-left: 185px;
+                    margin-bottom: 32px;
+                    margin-top: -4em;}
+
+/************************************************************* 
+Here are the various CSS classes that I have used. Several 
+classes have no style defined for them specfically and most 
+likly they were used for their microformat value.
+see: http://microformats.org.
+***************************************************************/
+.adr, .street-address, .email, .tel, .locality, .region, .postal-code, .country-name,.email{text-align: right;
+                                                                                            color: #000000;
+                                                                                            font-family: "sans-serif";
+                                                                                            font-weight: normal;
+                                                                                            font-size: 10pt;
+}
+
+.companyInfo{}
+.company{}
+
+.courses{ margin-top: 0pt;
+          display: block;
+          margin-left: 0em;
+          margin-bottom: 12pt;
+          border: 0px solid yellow;
+}
+
+.dates { text-align: right;
+         color: #000000;
+         font-family: arial;
+         font-weight: normal;
+         font-size: 12pt;
+         float: right;
+}
+
+.description{
+    color: #000000;
+    font-family: "arial";
+    font-size: 10pt;
+}
+
+.gpa{display: block;
+     color: #000000;
+     font-size: 12pt;
+}
+
+.int{
+    display: block;
+    margin-top: 6pt;
+    margin-left: 5em;
+    list-style-type: none;    
+}
+
+.job{ display: block;
+      margin-top: 44pt;
+      margin-left: 5em;
+      list-style-type: none;
+}
+
+.jobtitle {text-align: left;
+           color: #000000;
+           font-family: "arial";
+           font-style: italic;
+           font-size: 12pt;
+           display: block;
+}
+
+.location { text-align: left;
+            color: #000000;
+            font-family: "sans-serif";
+            font-weight: normal;
+            font-size: 10pt;
+            display: inline;
+}
+
+/*list of your major classes that you have taken */
+.major{ margin-top: 0pt;
+        display: inline;
+        margin-left: 1em;
+        width: 50%;
+        float: left;
+        border: 0px solid blue;
+        list-style-type: disc;
+}
+
+/* what degree you are getting */
+.MajorDegree{display: block;
+             color: #000000;
+             font-size: 12pt;
+} 
+
+/* list of minor classes that you have taken */
+.minor{ margin-top: 0pt;
+        margin-left: 0em;
+        border: 0px solid green;
+        list-style-type: none;
+}
+
+/* your minor degree you are getting */
+.MinorDegree {display: block;
+              color: #000000;
+              font-size: 12pt;
+} 
+
+.ref{ margin-top: 6pt;
+      margin-left: 5em;
+      list-style-type: none;
+}
+
+.school{ display: block;
+         margin-top: 6pt;
+         margin-left: 5em;
+         list-style-type: none;
+}
+/**a.url.fn{font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+         text-transform: uppercase;}**/
+
+/************************************************************* 
+general element formats that i set
+***************************************************************/
+h1#name{font-size: 48px; text-transform: uppercase; letter-spacing: 3px; 
+        font-weight: normal;
+        display: block;
+      }
+h2 { 
+    text-align: left;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 0pt;
+    
+    display: inline-block;
+    position: relative;
+    top: 35px;
+}
+h3{ font-size: 90%;
+    float: left;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase; letter-spacing: 2px;
+    padding-bottom: 1em;}
+
+
+h1#name,h3{color: #333;}
+
+p { font-weight: normal;
+    font-size: 12pt;
+    font-family: "sans-serif";
+    margin-left: 0pt;
+    margin-right: 0pt;
+    margin-top: 0pt;
+    margin-bottom: 12pt;
+}
+
+/* Gradient transparent - color - transparent */
+    
+hr {
+    border: 0;
+    height: 2px;
+    width: 1000px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+body#resume{background-color: #AFC4C2;
+            font-family: Georgia; color: #444; 
+            margin-bottom: 1em;
+
+            border-radius: 250px;}
+div.email{margin-top: -3em;
+          padding-right: 0em;}
+p.description{height: 113px;
+              width: 538px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              padding-bottom: 1em;
+              }
+div#skills ul{text-align: center;}
+
+
+span.dates{visibility: hidden;}
+
+a.company{margin-left: 8em;}
+
+
+span.jobtitle{margin-left: 8em;
+              padding-bottom: 2em;}
+    
+#experience{margin-top: -60px;}
+
+hr.orig{margin-top: 0px;}
+
+div#profExperience{border-top: solid;
+                    margin-top: 4em;}
+

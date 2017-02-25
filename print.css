@@ -1,0 +1,131 @@
+
+
+/* BODY */
+body{margin-left: 100px;
+		margin-right: 100px;
+		}
+
+/* END BODY */
+
+
+
+
+/* HEADER */
+div.left{width: 327px;
+		float: left;}
+
+div.right{width: 191px;
+			height: 117px;
+			float: right;
+			}
+
+div.right p:first-child{margin-top: 27px;}
+
+div.left p {margin-top: -10px;
+			font-style: italic;
+			letter-spacing: 2px;
+			font-size: 19px;}
+
+div.left h1 {
+			
+			letter-spacing: 3px;
+			font-size: 30px;}
+
+div#header{width: 100%;
+			height: 121px;
+			border-bottom: solid 2px black;}
+
+/* END HEADER */
+
+
+/* Professional Experience */
+
+div#content h1{text-align: left;
+					font-weight: bold;
+					font-size: 14pt;}
+div.skills h2{text-align: left;
+					font-weight: bold;
+					font-size: 14pt;}
+div#education h2{text-align: left;
+					font-weight: bold;
+					font-size: 14pt;}
+
+a{text-decoration:none;}
+
+div.experience{width: 100%;
+				height: 120px;
+				position: relative;
+				top: 0px;
+				left: 100px;}
+
+
+div#content div.experience ul li{position: relative;
+								top: 0px;
+								left: 53px;
+								list-style: none;}
+
+
+
+div.skills ul{list-style: none;
+				text-align: center; 
+				}
+div.skills ul li {display: inline-block;
+					padding-right: 1em;
+					
+					}
+
+hr {
+    border: 0;
+    height: 2px;
+    width: 500px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+
+div#education ol{list-style: none;}
+div#education h3{font-size: 90%;
+				font-style: italic;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				padding-bottom: 1em;
+				color: #333;}
+
+div#education ul{position:relative;
+					top:-48px;
+					left: 180px;
+					list-style: disc;}
+
+
+
+
+
+
+
+
+
+
+a{text-decoration: none;
+color: black;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
